@@ -1,0 +1,285 @@
+/*-----------------------------------------------------------------------------------
+ 
+    Theme Name: byBrick WordPress boilerplate
+    Theme URI: http://bybrick.se/
+    Description: WordPress-boilerplate av byBrick.
+    Author: David Paulsson
+    Author URI: http://davidpaulsson.se/
+ 
+-----------------------------------------------------------------------------------
+
+    1.0		CSS Reset & Clearfix
+    2.0		Lite standardtypografi
+    3.0		WordPress Core
+    4.0		byBrick [shortcodes] för kolumner
+    5.0		
+
+-----------------------------------------------------------------------------------*/
+
+/* ================================================================================
+
+    1.0    CSS Reset & Clearfix - http://meyerweb.com/eric/tools/css/reset
+
+   ================================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; } .clearfix { display: inline-block; } /* Hide from IE Mac \*/ .clearfix { display: block; } /* End hide from IE Mac */ .none { display: none; } /* End Clearfix */
+
+/* ================================================================================
+
+    2.0    Lite standardtypografi
+
+   ================================================================================*/
+
+html { font-size: 100.01% }
+body {
+    font-size: 75%;
+    color: #222;
+    background: #fff;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    color: #111;
+}
+h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin-bottom: .5em;
+}
+h2 {
+    font-size: 2em;
+    margin-bottom: .75em;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+h4 {
+    font-size: 1.2em;
+    line-height: 1.25;
+    margin-bottom: 1.25em;
+}
+h5 {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+}
+h6 {
+    font-size: 1em;
+    font-weight: bold;
+}
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img { margin: 0 }
+
+p { 
+	margin: 0 0 1.5em;
+	line-height: 1.5em;
+}
+.left { float: left!important }
+p .left {
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 0;
+}
+.right { float: right!important }
+p .right {
+    margin: 1.5em 0 1.5em 1.5em;
+    padding: 0;
+}
+
+a:focus,
+a:hover { color: #09f }
+a {
+    color: #06c;
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 1.5em;
+    color: #666;
+    font-style: italic;
+}
+strong,
+dfn { font-weight: bold }
+em,
+dfn { font-style: italic }
+sup,
+sub { line-height: 0 }
+abbr,
+acronym { border-bottom: 1px dotted #666 }
+address {
+    margin: 0 0 1.5em;
+    font-style: italic;
+}
+del { color: #666 }
+pre {
+    margin: 1.5em 0;
+    white-space: pre;
+}
+pre,
+code,
+tt {
+    font: 1em 'andale mono', 'lucida console', monospace;
+    line-height: 1.5;
+}
+
+li ul,
+li ol { margin: 0 }
+ul,
+ol {
+    margin: 0 1.5em 1.5em 0;
+    line-height: 1.5em;
+    padding-left: 1.5em;
+}
+ul { list-style-type: disc }
+ol { list-style-type: decimal }
+dl { margin: 0 0 1.5em }
+dl dt { font-weight: bold }
+dd { margin-left: 1.5em }
+
+table {
+    margin-bottom: 1.4em;
+    width: 100%;
+}
+th { font-weight: bold }
+thead th { background: #c3d9ff }
+th,
+td,
+caption { padding: 4px 10px 4px 5px }
+tbody tr:nth-child(even) td,
+tbody tr.even td { background: #e5ecf9 }
+tfoot { font-style: italic }
+caption { background: #eee }
+
+/* ================================================================================
+
+    3.0    WordPress Core
+
+   ================================================================================*/
+
+.alignnone { margin: 5px 20px 20px 0 }
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+a img.alignnone { margin: 5px 20px 20px 0 }
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+.wp-caption.alignnone { margin: 5px 20px 20px 0 }
+.wp-caption.alignleft { margin: 5px 20px 20px 0 }
+.wp-caption.alignright { margin: 5px 0 20px 20px }
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.entry-content img { } /* Glöm inte att sätta max-bredden på bilder */
+
+/* ================================================================================
+
+    4.0		byBrick [shortcodes] för kolumner
+
+   ================================================================================*/
+
+.one_half { width: 48% }
+.one_third { width: 30.66% }
+.two_third { width: 65.33% }
+.one_fourth { width: 22% }
+.three_fourth { width: 74% }
+.one_fifth { width: 16.8% }
+.two_fifth { width: 37.6% }
+.three_fifth { width: 58.4% }
+.four_fifth { width: 67.2% }
+.one_sixth { width: 13.33% }
+.five_sixth { width: 82.67% }
+
+.one_half,
+.one_third,
+.two_third,
+.three_fourth,
+.one_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+    position: relative;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.column-last {
+    margin-right: 0!important;
+    clear: right;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    width: 100%;
+}
+
+/* ================================================================================
+
+    5.0
+
+   ================================================================================*/
