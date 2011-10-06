@@ -68,7 +68,14 @@
 		<!-- START nav-nedan -->
 		<nav id="nav-nedan">
 		
-    		<?php wp_pagenavi(); // Plugin URL: http://wordpress.org/extend/plugins/wp-pagenavi/ ?>
+			<?php if ( function_exists( 'wp_pagenavi' ) ) { wp_pagenavi(); } else { ?>
+				<div class="alignleft">
+					<?php next_posts_link(__('&laquo; Äldre inlägg')); ?>
+				</div>
+				<div class="alignright">
+					<?php previous_posts_link(__('Nyare inlägg &raquo;')); ?>
+				</div>
+			<?php } ?>
     	
     	<!-- END nav-nedan -->
     	</nav>
