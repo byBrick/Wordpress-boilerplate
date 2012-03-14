@@ -2,9 +2,10 @@
 <html <?php language_attributes(); ?>>
 <head>
 
-	<!-- 
+	<!--
 
-		Site Name by byBrick (http://bybrick.se/).
+		<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?> by byBrick
+		http://bybrick.se
 
 	-->
 
@@ -46,7 +47,7 @@
 	<link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/images/apple-touch-icon.png">
 	
 	<!--[if lt IE 9]>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
 	<?php wp_head(); ?>
