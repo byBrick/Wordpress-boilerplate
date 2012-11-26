@@ -1,7 +1,7 @@
 /*
 Theme Name: byBrick WordPress boilerplate
 Theme URI: http://bybrick.se/
-Description: WordPress-boilerplate av byBrick.
+Description: Very small footprint WordPress boilerplate by byBrick.
 Author: David Paulsson
 Author URI: http://davidpaulsson.se/
 */
@@ -22,7 +22,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .cf:after { clear:both; }
 .cf { zoom:1; }
 
-/* =Lite vettig standardtypografi
+/* =Default typography
 -------------------------------------------------------------- */
 
 html { font-size: 100.01% }
@@ -150,7 +150,7 @@ tbody tr.even td { background: #e5ecf9 }
 tfoot { font-style: italic }
 caption { background: #eee }
 
-/* =Stil för vanliga WordPress-klasser
+/* =Default WordPress classes
 -------------------------------------------------------------- */
 
 .alignnone { margin: 5px 20px 20px 0 }
@@ -209,7 +209,7 @@ a img.aligncenter {
 	margin: 0;
 	padding: 0 4px 5px;
 }
-.post-content img { } /* Glöm inte att sätta max-bredden på bilder */
+.post-content img { } /* Don't forget to set max-width on images */
 
 /* =
 -------------------------------------------------------------- */

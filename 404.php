@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-		<h1>Error 404 - Page Not Found</h1>
+		<h1><?php _e( 'Error 404 - Page Not Found', 'bybrick' ); ?></h1>
 
 	</div><!-- #main -->
 
