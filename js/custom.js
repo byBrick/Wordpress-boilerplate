@@ -1,6 +1,8 @@
-$(function(){
+// jQuery
+var $ = jQuery.noConflict();
+$(function () {
 
-	//Gör något
+	// Do stuff
 
 	//Konami code, the lolz
 	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
