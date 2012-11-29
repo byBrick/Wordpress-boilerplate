@@ -3,11 +3,10 @@
 ## Description ##
 
 A WordPress HTML5 boilerplate for new WordPress projects. Suitable for most projects. 
-NOTE: This is a small boilerplate intended for small and quick sites. For bigger more "complete" WordPress themes I recomment you check out [_s](https://github.com/Automattic/_s) by Automatic instead.
+NOTE: This is a small boilerplate intended for small and quick sites. For bigger more "complete" WordPress themes I recommend you check out [_s](https://github.com/Automattic/_s) by Automatic instead.
 
 ### Features ###
 
-* Loads jQuery from Google CDN
 * Loads html5shiv from Google CDN (for Internet Explorer only)
 * Custom login image
 * Menu support
