@@ -9,207 +9,321 @@ Author URI: http://davidpaulsson.se/
 /* =CSS Reset http://meyerweb.com/eric/tools/css/reset
 -------------------------------------------------------------- */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-collapse: collapse; border-spacing: 0; }
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; outline: 0; border: 0; background: transparent; vertical-align: baseline; font-size: 100%; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } :focus { outline: 0; } ins { text-decoration: none; } del { text-decoration: line-through; } table { border-spacing: 0; border-collapse: collapse; }
 
 /* =Clearfix http://nicolasgallagher.com/micro-clearfix-hack/
 -------------------------------------------------------------- */
 
 .cf:before,
 .cf:after {
-	content:"";
-	display:table;
+    display: table;
+    content: "";
 }
-.cf:after { clear:both; }
-.cf { zoom:1; }
+
+.cf:after {
+    clear: both
+}
+
+.cf {
+    zoom: 1
+}
 
 /* =Default typography
 -------------------------------------------------------------- */
 
-html { font-size: 100.01% }
-body {
-	font-size: 75%;
-	color: #222;
-	background: #fff;
-	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+html {
+    font-size: 100.01%
 }
+
+body {
+    background: #fff;
+    color: #222;
+    font-size: 75%;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-weight: normal;
-	color: #111;
+    color: #111;
+    font-weight: normal;
 }
+
 h1 {
-	font-size: 3em;
-	line-height: 1;
-	margin-bottom: .5em;
+    margin-bottom: .5em;
+    font-size: 3em;
+    line-height: 1;
 }
+
 h2 {
-	font-size: 2em;
-	margin-bottom: .75em;
+    margin-bottom: .75em;
+    font-size: 2em;
 }
+
 h3 {
-	font-size: 1.5em;
-	line-height: 1;
-	margin-bottom: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    line-height: 1;
 }
+
 h4 {
-	font-size: 1.2em;
-	line-height: 1.25;
-	margin-bottom: 1.25em;
+    margin-bottom: 1.25em;
+    font-size: 1.2em;
+    line-height: 1.25;
 }
+
 h5 {
-	font-size: 1em;
-	font-weight: bold;
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+    font-size: 1em;
 }
+
 h6 {
-	font-size: 1em;
-	font-weight: bold;
+    font-weight: bold;
+    font-size: 1em;
 }
+
 h1 img,
 h2 img,
 h3 img,
 h4 img,
 h5 img,
-h6 img { margin: 0 }
-p { 
-	margin: 0 0 1.5em;
-	line-height: 1.5em;
+h6 img {
+    margin: 0
 }
-.left { float: left!important }
+
+p {
+    margin: 0 0 1.5em;
+    line-height: 1.5em;
+}
+
+.left {
+    float: left!important
+}
+
 p .left {
-	margin: 1.5em 1.5em 1.5em 0;
-	padding: 0;
+    margin: 1.5em 1.5em 1.5em 0;
+    padding: 0;
 }
-.right { float: right!important }
+
+.right {
+    float: right!important
+}
+
 p .right {
-	margin: 1.5em 0 1.5em 1.5em;
-	padding: 0;
+    margin: 1.5em 0 1.5em 1.5em;
+    padding: 0;
 }
+
 a:focus,
-a:hover { color: #09f }
+a:hover {
+    color: #09f
+}
+
 a {
-	color: #06c;
-	text-decoration: underline;
+    color: #06c;
+    text-decoration: underline;
 }
+
 blockquote {
-	margin: 1.5em;
-	color: #666;
-	font-style: italic;
+    margin: 1.5em;
+    color: #666;
+    font-style: italic;
 }
+
 strong,
-dfn { font-weight: bold }
+dfn {
+    font-weight: bold
+}
+
 em,
-dfn { font-style: italic }
+dfn {
+    font-style: italic
+}
+
 sup,
-sub { line-height: 0 }
+sub {
+    line-height: 0
+}
+
 abbr,
-acronym { border-bottom: 1px dotted #666 }
+acronym {
+    border-bottom: 1px dotted #666
+}
+
 address {
-	margin: 0 0 1.5em;
-	font-style: italic;
+    margin: 0 0 1.5em;
+    font-style: italic;
 }
-del { color: #666 }
+
+del {
+    color: #666
+}
+
 pre {
-	margin: 1.5em 0;
-	white-space: pre;
+    margin: 1.5em 0;
+    white-space: pre;
 }
+
 pre,
 code,
 tt {
-	font: 1em 'andale mono', 'lucida console', monospace;
-	line-height: 1.5;
+    font: 1em 'andale mono', 'lucida console', monospace;
+    line-height: 1.5;
 }
+
 li ul,
-li ol { margin: 0 }
+li ol {
+    margin: 0
+}
+
 ul,
 ol {
-	margin: 0 1.5em 1.5em 0;
-	line-height: 1.5em;
-	padding-left: 1.5em;
+    margin: 0 1.5em 1.5em 0;
+    padding-left: 1.5em;
+    line-height: 1.5em;
 }
-ul { list-style-type: disc }
-ol { list-style-type: decimal }
-dl { margin: 0 0 1.5em }
-dl dt { font-weight: bold }
-dd { margin-left: 1.5em }
+
+ul {
+    list-style-type: disc
+}
+
+ol {
+    list-style-type: decimal
+}
+
+dl {
+    margin: 0 0 1.5em
+}
+
+dl dt {
+    font-weight: bold
+}
+
+dd {
+    margin-left: 1.5em
+}
+
 table {
-	margin-bottom: 1.4em;
-	width: 100%;
+    margin-bottom: 1.4em;
+    width: 100%;
 }
-th { font-weight: bold }
-thead th { background: #c3d9ff }
+
+th {
+    font-weight: bold
+}
+
+thead th {
+    background: #c3d9ff
+}
+
 th,
 td,
-caption { padding: 4px 10px 4px 5px }
+caption {
+    padding: 4px 10px 4px 5px
+}
+
 tbody tr:nth-child(even) td,
-tbody tr.even td { background: #e5ecf9 }
-tfoot { font-style: italic }
-caption { background: #eee }
+tbody tr.even td {
+    background: #e5ecf9
+}
+
+tfoot {
+    font-style: italic
+}
+
+caption {
+    background: #eee
+}
 
 /* =Default WordPress classes
 -------------------------------------------------------------- */
 
-.alignnone { margin: 5px 20px 20px 0 }
+.alignnone {
+    margin: 5px 20px 20px 0
+}
+
 .aligncenter,
 div.aligncenter {
-	display: block;
-	margin: 5px auto 5px auto;
+    display: block;
+    margin: 5px auto 5px auto;
 }
+
 .alignright {
-	float: right;
-	margin: 5px 0 20px 20px;
+    float: right;
+    margin: 5px 0 20px 20px;
 }
+
 .alignleft {
-	float: left;
-	margin: 5px 20px 20px 0;
+    float: left;
+    margin: 5px 20px 20px 0;
 }
+
 .aligncenter {
-	display: block;
-	margin: 5px auto 5px auto;
+    display: block;
+    margin: 5px auto 5px auto;
 }
+
 a img.alignright {
-	float: right;
-	margin: 5px 0 20px 20px;
+    float: right;
+    margin: 5px 0 20px 20px;
 }
-a img.alignnone { margin: 5px 20px 20px 0 }
+
+a img.alignnone {
+    margin: 5px 20px 20px 0
+}
+
 a img.alignleft {
-	float: left;
-	margin: 5px 20px 20px 0;
+    float: left;
+    margin: 5px 20px 20px 0;
 }
+
 a img.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 .wp-caption {
-	background: #fff;
-	border: 1px solid #f0f0f0;
-	max-width: 96%;
-	padding: 5px 3px 10px;
-	text-align: center;
+    padding: 5px 3px 10px;
+    max-width: 96%;
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    text-align: center;
 }
-.wp-caption.alignnone { margin: 5px 20px 20px 0 }
-.wp-caption.alignleft { margin: 5px 20px 20px 0 }
-.wp-caption.alignright { margin: 5px 0 20px 20px }
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px
+}
+
 .wp-caption img {
-	border: 0 none;
-	height: auto;
-	margin: 0;
-	max-width: 98.5%;
-	padding: 0;
-	width: auto;
+    margin: 0;
+    padding: 0;
+    max-width: 98.5%;
+    width: auto;
+    height: auto;
+    border: 0 none;
 }
+
 .wp-caption p.wp-caption-text {
-	font-size: 11px;
-	line-height: 17px;
-	margin: 0;
-	padding: 0 4px 5px;
+    margin: 0;
+    padding: 0 4px 5px;
+    font-size: 11px;
+    line-height: 17px;
 }
-.post-content img { } /* Don't forget to set max-width on images */
+
+.post-content img {} /* Don't forget to set max-width on images */
 
 /* =
 -------------------------------------------------------------- */
